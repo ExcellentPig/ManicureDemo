@@ -1,0 +1,60 @@
+.user_base_info {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	font-size: 30rpx;
+	border-bottom: 2rpx solid #ccc;
+	padding: 80rpx 0;
+}
+
+.user_avatar{
+	width: 200rpx;
+	height: 200rpx;
+	margin-right: 60rpx;
+}
+
+.user_avatar open-data {
+	overflow: hidden;
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+
+.user_avatar open-data:hover{
+	opacity: .5;
+}
+
+.user_info{
+	margin-top: 30rpx;
+	line-height: 48rpx;
+}
+
+.uer_addr_message{
+	width: 100%;
+	padding: 40rpx 0;
+}
+
+.user_addr_title{
+	font-size: 35rpx;
+	padding-bottom: 40rpx;
+}
+
+.user_addr_item{
+	padding: 60rpx 40rpx;
+}
+
+.addr_sub{
+	display: flex;
+	flex-direction: column;
+	font-size: 28rpx;
+	padding: 15rpx;
+	border: 2rpx solid #ccc;
+	margin-top: 30rpx;
+}
+
+.addr_sub:hover{
+	background: #ddd;
+	color: red;
+}

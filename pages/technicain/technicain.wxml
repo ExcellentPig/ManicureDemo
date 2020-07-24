@@ -1,0 +1,44 @@
+<view class="box">
+	<scroll-view 
+	scroll-y="true"
+	bindscrolltolower="loadMore"
+	class="page-body"
+	enable-flex="true"
+	>
+		<view class="ar_picker_wrap">
+			<picker 
+			value="{{index}}"
+			range="{{caseArray}}"
+			bindchange="namechange"
+			>
+				<view>{{caseArray[index]}}</view>
+			</picker>
+		</view>
+		<view class="nav_section">
+			<view wx:if="{{list}}">
+				<block wx:for="{{list}}" wx:key="this">
+					<view class="nav_section_items" bindtap="navgetDetail">
+						<view class="section_image">
+							<image src="{{item.avatar}}"></image>
+						</view>
+						<view class="section_con">
+							<view class="section_con_sub">
+								<text>{{item.company}}</text>
+							</view>
+							<view class="section_con_price">
+								<text>{{item.nickname}}</text>
+								<text class="price">{{item.price}}</text>
+							</view>
+							<view class="message">
+								<text>{{item.message}}</text>
+							</view>
+						</view>
+					</view>
+				</block>
+			</view>
+			<view wx:else>
+				<text>暂无数据</text>
+			</view>
+		</view>
+	</scroll-view>
+</view>

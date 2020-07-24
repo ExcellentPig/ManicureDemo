@@ -1,0 +1,75 @@
+<view class="box">
+	<scroll-view 
+	scroll-y="true" 
+	class="page-body" 
+	enable-flex="true"
+	bindscrolltolower="loadMore"
+	>
+		<view class="swiper">
+			<swiper 
+			autoplay = "{{autoplay}}"
+			interval = "{{interval}}"
+			duration = "{{duration}}"
+			vertical = "{{vertical}}"
+			indicator-dots="{{indicatordots}}"
+			>
+				<block wx:for-items="{{banner_url}}" wx:key="this">
+					<swiper-item>
+						<block wx:if="{{item}}">
+							<image src="{{item}}"></image>
+						</block>
+						<block wx:else>
+							<image src="http://q9h6xkv6p.bkt.clouddn.com/default_pic.png"></image>
+						</block>
+					</swiper-item>
+				</block>
+			</swiper>
+		</view>
+		<view class="nav_top">
+			<block wx:for="{{navTopItems}}" wx:key="this">
+				<view 
+				class="nav_top_item {{curNavId == item.id ? 'active_'+colors[index] : ''}}" 
+				data-id="{{item.id}}"
+				data-index="{{index}}"
+				bindtap="switchTap"
+				>
+					<image src="{{item.icon}}"></image>
+					<text>{{item.title}}</text>
+				</view>
+			</block>
+		</view>
+		<view class="nav_section">
+			<view wx:if="{{list[curNavIndex]}}">
+				<block wx:for="{{list[curNavIndex]}}" wx:key="this">
+					<view class="nav_section_item">
+						<view class="section_images">
+							<block wx:if="{{item.civerpath}}">
+								<image bindtap="navigateDetail" src="{{item.civerpath}}"></image>
+							</block>
+							<block wx:else>
+								<image src="http://q9h6xkv6p.bkt.clouddn.com/default_pic.png"></image>
+							</block>
+						</view>
+						<view class="section_con">
+							<view class="section_con_sub">
+								<text>{{item.subject}}</text>
+							</view>
+							<view class="section_con_price">
+								<text>{{item.price}}</text>
+							</view>
+							<view class="text_index">
+								<text>{{item.message}}</text>
+							</view>
+						</view>
+						<view class="section_book" bindtap="bookTap">
+							<text>预约</text>
+						</view>
+					</view>
+				</block>
+			</view>
+			<view wx:else>
+				<test>暂无数据</test>
+			</view>
+		</view>
+	</scroll-view>
+</view>

@@ -1,0 +1,51 @@
+.box{
+	background: #fff;
+}
+.ar_converPath{
+	width: 100%;
+	margin: 0;
+}
+
+.ar_converPath image{
+	width: 100%;
+	height: 390rpx;
+}
+
+.ar_cont{
+	padding: 0rpx 40rpx;
+	font-size: 30rpx;
+	color: #666;
+	margin-bottom: 40rpx;
+	line-height: 45rpx;
+}
+
+.ar_cont_h1{
+	color: #000;
+	font-size: 32rpx;
+	font-weight: bold;
+	width: 100%;
+	text-align: center;
+	padding-bottom: 20rpx;
+}
+
+.ar_cont_h2{
+	color: #000;
+	font-size: 32rpx;
+	width: 100%;
+	text-align: center;
+	padding: 60rpx 0rpx;
+}
+
+.ar_sevice_item{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border-bottom: 2rpx solid #ddd;
+	padding: 10rpx 0;
+	line-height: 80rpx;
+}
+
+.ar_cont_price{
+	color: red;
+	margin-left: 60rpx;
+}

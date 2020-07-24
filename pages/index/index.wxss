@@ -1,0 +1,120 @@
+.swiper {
+	width: 100%;
+	margin: 0rpx;
+}
+
+.swiper image {
+	display: inline-block;
+	width: 100%;
+	height: 380rpx;
+}
+
+.nav_top {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	padding: 20rpx 10rpx;
+	box-sizing: border-box;
+	background: black;
+	color: #fff;
+	justify-content: space-around;
+}
+
+.nav_top_item {
+	width: 100rpx;
+	font-size: 28rpx;
+	text-align: center;
+	border-radius: 8rpx;
+	box-sizing: border-box;
+}
+
+.nav_top_item image {
+	width: 83rpx;
+	height: 93rpx;
+	display: inline-block;
+}
+
+.active_red {
+	color: #e5004f;
+}
+
+.active_orange {
+	color: #eb6100;
+}
+
+.active_yellow {
+	color: #fff100;
+}
+
+.active_green {
+	color: #8fc31f
+}
+
+.active_purple {
+	color: #aa2adf
+}
+
+.nav_section{
+	width: 100%;
+}
+
+.nav_section_item{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 30rpx;
+	border-bottom: 1px solid #ddd;
+}
+.nav_section_item:active{
+	background: #ddd;
+}
+.section_images{
+	width: 170rpx;
+	height: 158rpx;
+}
+
+.nav_section_item view{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	display: block;
+}
+
+.section_images image{
+	width: 100%;
+	height: 100%;
+}
+
+.section_con{
+	width: 400rpx;
+	font-size: 26rpx;
+	color: #a9a9a9;
+}
+
+.section_con_sub{
+	font-size: 30rpx;
+	line-height: 60rpx;
+	color: #000;
+	margin-bottom: 10rpx;
+}
+
+.section_con_price{
+	font-size: 32rpx;
+	color: #d24a58;
+}
+
+.text_index{
+	padding-top: 8rpx;
+}
+
+.section_book{
+	width: 80rpx;
+	height: 80rpx;
+	border-radius: 100%;
+	font-size: 26rpx;
+	background: #d26a58;
+	line-height: 80rpx;
+	color: white;
+	text-align: center;
+	margin-top: 35rpx;
+}

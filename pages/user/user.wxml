@@ -1,0 +1,29 @@
+<view class="box">
+	<view class="user_base_info">
+		<view class="user_avatar">
+			<block wx:if="userAvatarUrl">
+				<open-data type="userAvatarUrl"></open-data>
+			</block>
+			<block wx:else>
+				<image src="http://q9h6xkv6p.bkt.clouddn.com/default_pic.png"></image>
+			</block>
+		</view>
+		<view class="user_info">
+			昵称：<open-data type="userNickName"></open-data>
+			<text>
+				姓名：khan
+				电话：15228525589
+			</text>
+		</view>
+	</view>
+	<view class="uer_addr_message">
+		<view class="user_addr_title">【地址管理】</view>
+		<view class="user_addr_item">
+			<text class="addr_sub">贵阳市大营坡万江小区</text>
+			<text class="addr_sub">贵阳市大营坡万江小区</text>
+			<text class="addr_sub">贵阳市大营坡万江小区</text>
+			<text class="addr_sub">贵阳市大营坡万江小区</text>
+		</view>
+		<button type="primary" class="btn" bindtap="map_btn">查看我当前的位置</button>
+	</view>
+</view>

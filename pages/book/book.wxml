@@ -1,0 +1,49 @@
+<view class="box">
+		<view class="ar_coverpath">
+			<image src="http://q9h6xkv6p.bkt.clouddn.com/banner_03.jpg"></image>
+		</view>
+		<view class="ar_picker">
+			<view class="ar_cont_h1">{{choose_name}}</view>
+			<view class="ar_cont_wrap">
+				<picker 
+				value="{{index}}" 
+				bindchange="nameChange"
+				range = "{{range}}"
+				>
+					<view>{{range[index]}}</view>
+				</picker>
+			</view>
+			
+			<view class="ar_cont_h1">服务时间</view>
+			<view class="ar_date_time">
+				<view class="ar_date">
+					<image src="http://q9h6xkv6p.bkt.clouddn.com/date.png"></image>
+					<picker
+					mode="date"
+					value="{{date}}" 
+					bindchange="dateChange"
+					>
+						<view>{{date}}</view>
+					</picker>
+				</view>
+				
+				<view class="ar_time">
+					<image src="http://q9h6xkv6p.bkt.clouddn.com/time.png"></image>
+					<picker
+					mode="time"
+					value="{{time}}" 
+					bindchange="timeChange"
+					>
+						<view>{{time}}</view>
+					</picker>
+				</view>
+			</view>
+			<text class="ar_cont_h1">留言信息</text>
+			<input type="text" placeholder="请输入你的留言" class="msg_input" />
+			<button bindtap="bindToastTap" class="ar_book">确认预约</button>
+			<!--组件式的预约-->
+			<toast hidden="{{showToastBol}}" bindchange="hideToast">
+				预约成功
+			</toast>
+		</view>
+</view>

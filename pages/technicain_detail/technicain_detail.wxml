@@ -1,0 +1,48 @@
+<view class="box">
+	<scroll-view scroll-y="true" class="page-body">
+		<view class="ar_converPath">
+			<image src="http://q9h6xkv6p.bkt.clouddn.com/skilledt_banner.png"></image>
+		</view>
+		<view class="ar_cont">
+			<view class="ar_cont_h1">美甲师</view>
+			<text>高级美容师就是指美容师中技术能力更好，获得了高级美容师资格证的美容师。美容师是一种专业美容领域的职业称谓。</text>
+
+			<view class="ar_cont_h2">【服务内容】</view>
+			<view class="ar_sevice_item">
+				<text class="ar_cont_subject">面部的清洁</text>
+				<text class="ar_cont_price">￥600</text>
+				<text class="ar_cont_book" bindtap="navToBook">预约</text>
+			</view>
+			<view class="ar_sevice_item">
+				<text class="ar_cont_subject">面部的清洁</text>
+				<text class="ar_cont_price">￥800</text>
+				<text class="ar_cont_book" bindtap="navToBook">预约</text>
+			</view>
+			<view class="ar_sevice_item">
+				<text class="ar_cont_subject">面部的清洁</text>
+				<text class="ar_cont_price">￥1200</text>
+				<text class="ar_cont_book" bindtap="navToBook">预约</text>
+			</view>
+			<view class="ar_sevice_item">
+				<text class="ar_cont_subject">面部的清洁</text>
+				<text class="ar_cont_price">￥1500</text>
+				<text class="ar_cont_book" bindtap="navToBook">预约</text>
+			</view>
+			<view class="ar_sevice_item">
+				<text class="ar_cont_subject">面部的清洁</text>
+				<text class="ar_cont_price">￥2000</text>
+				<text class="ar_cont_book" bindtap="navToBook">预约</text>
+			</view>
+			<view class="ar_sevice_item">
+				<text class="ar_cont_subject">面部的清洁</text>
+				<text class="ar_cont_price">￥600</text>
+				<text class="ar_cont_book" bindtap="navToBook">预约</text>
+			</view>
+			<view class="ar_sevice_item">
+				<text class="ar_cont_subject">面部的清洁</text>
+				<text class="ar_cont_price">￥500</text>
+				<text class="ar_cont_book" bindtap="navToBook">预约</text>
+			</view>
+		</view>
+	</scroll-view>
+</view>
